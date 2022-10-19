@@ -182,7 +182,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="preparing-for-the-course" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Preparing for the course<a href="#preparing-for-the-course" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In to prepare for the Columbia Mountain Institute’s “An Introduction to Camera Trap Data Management and Analysis in R” course. You must:</p>
+<p>In order to prepare for the Columbia Mountain Institute’s “An Introduction to Camera Trap Data Management and Analysis in R” course. You must:</p>
 <ul>
 <li>Install R</li>
 <li>Install R Studio</li>
@@ -196,19 +196,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">1.1</span> Install R<a href="#install-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Windows</strong> Click on <a href="https://cran.r-project.org/bin/windows/base/">this link</a> and then <code>Download R-4.2.1 for Windows</code>.</p>
 <p><strong>Mac</strong> Click on <a href="https://cran.r-project.org/bin/macosx/">this link</a> and then the <code>R-4.2.1.pkgs</code> link.</p>
-<p><strong>If you already have R</strong> Please update your R client so that it is on at least version 4.2.1. Checkout the <a href="https://www.r-project.org/nosvn/pandoc/installr.html">installR package</a></p>
+<p><strong>If you already have R</strong> please update your R client so that it is on at least version 4.2.1. Checkout the <a href="https://www.r-project.org/nosvn/pandoc/installr.html">installR package</a> to this directly from the terminal.</p>
 </div>
 <div id="install-rstudio" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> Install RStudio<a href="#install-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Throughout this course we will use RStudio to interact with R. Please download <code>RStudio Desktop</code> (Free) from the <a href="https://www.rstudio.com/products/rstudio/download/">RStudio website</a>. Alternatives to RStudio exist and we are happy if you want to use one of those instead!</p>
+<p>Through the course we will use RStudio to interact with R. Please download <code>RStudio Desktop</code> (Free) from the <a href="https://www.rstudio.com/products/rstudio/download/">RStudio website</a>. Alternatives to RStudio exist and we are happy if you want to use one of those instead!</p>
 <p><strong>Installation check</strong></p>
 <p>Open RStudio. If all has gone well you should see something like this:</p>
 <p><img src="images/course-preparation/R_studio_start.PNG" width="100%" /></p>
 </div>
 <div id="install-the-required-packages" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> Install the required packages<a href="#install-the-required-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The next step is to install the packagfes reqired for the course. We need to do this in two steps: first, packages which are on CRAN (the Comprehensive R Archive Network), and then those which are not.</p>
-<p>Finally, I provide the links to install and setup R Google Earth Engine (<code>rgee</code>), this is for advanced users only and we will not be using it in the course!</p>
+<p>The next step is to install the packages required for the course. We need to do this in two steps: first, install packages which are on CRAN (the Comprehensive R Archive Network), and then install those which are not.</p>
+<p>Finally, we have provided the links to install and setup R Google Earth Engine (<code>rgee</code>). This is an optional step for advanced users only - we will not be using it in the course!</p>
 <div id="cran-packages" class="section level3 hasAnchor" number="1.3.1">
 <h3><span class="header-section-number">1.3.1</span> CRAN packages<a href="#cran-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Copy and paste the following code into your R terminal and press enter. <em>Note - if you hover over the code block a copy button appears in the top right.</em></p>
@@ -255,7 +255,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="other-packages" class="section level3 hasAnchor" number="1.3.2">
 <h3><span class="header-section-number">1.3.2</span> Other packages<a href="#other-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Some packages must be compiled from sources other than CRAN. Copy and paste following code block into your R console and press enter.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We use the remotes package to access package repositories not on the CRAN interface</span></span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We use the remotes package to access package repositories not on the CRAN interface (e.g. on github)</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;RS-eco/traitdata&quot;</span>, <span class="at">build_vignettes =</span> T, <span class="at">force=</span>T)</span>
@@ -265,7 +265,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="create-an-r-project" class="section level2 hasAnchor" number="1.4">
 <h2><span class="header-section-number">1.4</span> Create an R project<a href="#create-an-r-project" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you do not already work within R projects - you should! It allows you to work on multiple projects at the same time, and makes specifying file paths much simpler. Finally, if you want to incorporate GiHub into your workflows in the future the use of R Projects is essential!</p>
+<p>If you do not already work within R projects - you should! It allows you to work on multiple projects at the same time, and makes specifying file paths much simpler. Finally, if you want to incorporate GiHub into your workflows in the future, the use of R Projects is essential!</p>
 <p>To create an R project for this course:</p>
 <p><strong>Step 1</strong> Click on <code>File</code> -&gt; <code>New project</code></p>
 <p><img src="images/course-preparation/new_project.png" width="50%" /></p>
@@ -276,9 +276,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Step 4</strong> Give your project a name and choose a folder to save it in (you do not have to copy the options here):</p>
 <p><img src="images/course-preparation/project_name.png" width="75%" /></p>
 <p><strong>Step 5</strong> Then click <code>Create Project</code></p>
-<p>The best thing about R Projects, is that all the files contained within it can be specified relative to the project folder. No need for long file paths any more! Currently your file strucutre should be empty (aside from the <code>.rproj</code> file):</p>
+<p>The best thing about R Projects is that all the files contained within it can be specified relative to the project folder - no more long file paths to deal with! Currently the ‘Files’ tab in the bottom right should be empty (aside from the <code>.rproj</code> file):</p>
 <p><img src="images/course-preparation/file_window.PNG" width="75%" /></p>
-<p>Take note of the file path in the image above. For me it is <code>C:/Users/Dropbox/wildco_R_course</code> as this is where you will copy the data files to in later steps.</p>
+<p>Take note of the file path in the image above. For me it is <code>C:/Users/Dropbox/wildco_R_course</code> as this is where you will copy the data files to in later steps. You can also go straight to the root directory the project by clicking the three dots to the right of the file path in the <code>Files</code> tab!</p>
 <p>Next, lets download the data files we need for this course!</p>
 </div>
 <div id="download-the-data-files" class="section level2 hasAnchor" number="1.5">
@@ -290,7 +290,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Step 3</strong> Extract the files (it doesn’t matter where to), then open the <code>data_for_intro_to_camera_traps</code> folder and copy the <code>data</code> folder it contains.</p>
 <p><img src="images/course-preparation/copy.png" width="75%" /></p>
 <p><strong>Step 4</strong> Then paste the data folder into your newly created R project folder.</p>
-<p><em>Note! you can go straight to the root directory of you project by clicking the three dots to the right of the file path in the <code>Files</code> tab of R Studio!</em></p>
 <p><img src="images/course-preparation/paste_files.PNG" width="462" /></p>
 <p><strong>Step 5</strong> If everything has worked, your `Files’ window in R Studio should now look like this:</p>
 <p><img src="images/course-preparation/final_files.PNG" width="80%" /></p>
@@ -298,11 +297,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="the-example-datasets" class="section level2 hasAnchor" number="1.6">
 <h2><span class="header-section-number">1.6</span> The example datasets<a href="#the-example-datasets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you navigate through <code>data &gt; raw_data</code> you will see that there are two files. One called <code>example_data</code> the other called <code>your_data</code>. The are summarised below:</p>
+<p>If you navigate through <code>data &gt; raw_data</code> you will see that there are two files. One called <code>example_data</code> the other called <code>your_data</code>. They are summarised below:</p>
 <div id="example_data" class="section level3 hasAnchor" number="1.6.1">
 <h3><span class="header-section-number">1.6.1</span> example_data<a href="#example_data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We have provided a subset of data derived from the <a href="https://wildlife.forestry.ubc.ca/">WildCo Lab</a>’s “Algar Restoration Project”. In the interest of teaching and code processing times, we have not provided a full dataset. Rather the data represent a sub-sample of sites (38 of 73 available) and years (2 of 4 available).</p>
-<p>If you want more information on this project, see the following papers (and the archieved datasets they contain):</p>
+<p>If you want more information on this project, see the following papers (and the archived datasets they contain):</p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0006320719307013">Tattersall, E. R., Burgar, J. M., Fisher, J. T., &amp; Burton, A. C. (2020). Mammal seismic line use varies with restoration: Applying habitat restoration to species at risk conservation in a working landscape. Biological Conservation, 241, 108295.</a></p>
 <p><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.6028">Tattersall, E. R., Burgar, J. M., Fisher, J. T., &amp; Burton, A. C. (2020). Boreal predator co‐occurrences reveal shared use of seismic lines in a working landscape. Ecology and Evolution, 10(3), 1678-1691.</a></p>
 <p><a href="https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2664.14020">Beirne, C., Sun, C., Tattersall, E. R., Burgar, J. M., Fisher, J. T., &amp; Burton, A. C. (2021). Multispecies modelling reveals potential for habitat restoration to re‐establish boreal vertebrate community dynamics. Journal of Applied Ecology, 58(12), 2821-2832.</a></p>
@@ -312,9 +311,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="your_data" class="section level3 hasAnchor" number="1.6.2">
 <h3><span class="header-section-number">1.6.2</span> your_data<a href="#your_data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>You can either use the dataset I have provided or you can substitute these files for your own data.</p>
-<p>If you used the files I have provided, this is the subset of an unpublished (and as yet un-analysed) dataset. I will leave it to you to find out more about it during the course!</p>
-<p>If you want to use your own data they <em>MUST</em> be in ‘Wildlife Insights’ format - see the descriptions <a href="https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit?usp=sharing">here</a> and for a existing example/template see <a href="https://drive.google.com/drive/folders/1MeCeoXepyee7mADlxQZ2k0bjVBOTP5m7?usp=sharing">here</a>. <em>NOTE</em> delete the description row if you are using your own data.</p>
+<p>The <code>your_data</code> folder contains files I have provided. This is the subset of an unpublished (and as yet un-analysed) dataset. I will leave it to you to find out more about it during the course!</p>
+<p>You can replace this data set with your own if you wish. If you want to use your own data it <em>MUST</em> be in ‘Wildlife Insights’ format - see the descriptions <a href="https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit?usp=sharing">here</a> and for a existing example/template see <a href="https://drive.google.com/drive/folders/1MeCeoXepyee7mADlxQZ2k0bjVBOTP5m7?usp=sharing">here</a>. <em>NOTE</em> delete the description row if you are using your own data.</p>
 <p>The green/bolded columns shown in the template example are the <strong>absolute minimal essential columns</strong> - you can have more columns with other information!</p>
 </div>
 </div>
@@ -325,11 +323,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;rgee&quot;</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;rgee&quot;</span>)</span></code></pre></div>
 <p>Then follow the steps in this tutorial: <a href="https://cran.r-project.org/web/packages/rgee/vignettes/rgee01.html">Introduction to rgee</a></p>
-<p>If you want to try this, good luck. It can be a little fiddly to get sorted!</p>
+<p>If you want to try this, good luck. It can be a little fiddly to get running!</p>
 </div>
 <div id="practise-before-the-course" class="section level2 hasAnchor" number="1.8">
 <h2><span class="header-section-number">1.8</span> Practise before the course<a href="#practise-before-the-course" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Finally, if you want to practise your R skills before the course, here are two (of many) great resources out there:</p>
+<p>Finally, if you want to practice your R skills before the course, here are two (of many) great resources out there:</p>
 <p><a href="https://www.youtube.com/watch?v=BvKETZ6kr9Q">R Programming for Beginners | Complete Tutorial | R &amp; RStudio</a> - Some great introductory videos to working in R</p>
 <p><a href="https://b-rodrigues.github.io/modern_R/">Modern R with the tidyverse</a> - A book introducing tidyverse data manipulation</p>
 

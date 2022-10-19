@@ -14,7 +14,7 @@ description: "Materials for the three day camera trap data management and analys
  
 # Preparing for the course
 
-In to prepare for the Columbia Mountain Institute's  "An Introduction to Camera Trap Data Management and Analysis in R" course. You must:
+In order to prepare for the Columbia Mountain Institute's  "An Introduction to Camera Trap Data Management and Analysis in R" course. You must:
 
 - Install R
 - Install R Studio
@@ -32,11 +32,11 @@ If you get stuck [send me an email!](mailto:c.w.beirne@gmail.com)
 
 **Mac** Click on [this link](https://cran.r-project.org/bin/macosx/) and then the `R-4.2.1.pkgs` link.
 
-**If you already have R**  Please update your R client so that it is on at least version 4.2.1. Checkout the [installR package](https://www.r-project.org/nosvn/pandoc/installr.html)
+**If you already have R**  please update your R client so that it is on at least version 4.2.1. Checkout the [installR package](https://www.r-project.org/nosvn/pandoc/installr.html) to this directly from the terminal.
 
 ## Install RStudio
 
-Throughout this course we will use RStudio to interact with R. Please download `RStudio Desktop` (Free) from the [RStudio website](https://www.rstudio.com/products/rstudio/download/). Alternatives to RStudio exist and we are happy if you want to use one of those instead!
+Through the course we will use RStudio to interact with R. Please download `RStudio Desktop` (Free) from the [RStudio website](https://www.rstudio.com/products/rstudio/download/). Alternatives to RStudio exist and we are happy if you want to use one of those instead!
 
 **Installation check**
 
@@ -49,9 +49,9 @@ knitr::include_graphics("images/course-preparation/R_studio_start.PNG")
 
 ## Install the required packages
 
-The next step is to install the packagfes reqired for the course. We need to do this in two steps: first, packages which are on CRAN (the Comprehensive R Archive Network), and then those which are not. 
+The next step is to install the packages required for the course. We need to do this in two steps: first, install packages which are on CRAN (the Comprehensive R Archive Network), and then install those which are not. 
 
-Finally, I provide the links to install and setup R Google Earth Engine (`rgee`), this is for advanced users only and we will not be using it in the course!
+Finally, we have provided the links to install and setup R Google Earth Engine (`rgee`). This is an optional step for advanced users only - we will not be using it in the course!
 
 ### CRAN packages
 Copy and paste the following code into your R terminal and press enter. *Note - if you hover over the code block a copy button appears in the top right.*
@@ -102,7 +102,7 @@ lapply(list.of.packages, require, character.only = TRUE)
 Some packages must be compiled from sources other than CRAN. Copy and paste following code block into your R console and press enter.
 
 ```{r, echo=T, eval=F}
-# We use the remotes package to access package repositories not on the CRAN interface
+# We use the remotes package to access package repositories not on the CRAN interface (e.g. on github)
 library(remotes)
 
 remotes::install_github("RS-eco/traitdata", build_vignettes = T, force=T)
@@ -114,7 +114,7 @@ remotes::install_github("annam21/spaceNtime", build_vignettes=TRUE)
 
 ## Create an R project
 
-If you do not already work within R projects - you should! It allows you to work on multiple projects at the same time, and makes specifying file paths much simpler. Finally, if you want to incorporate GiHub into your workflows in the future the use of R Projects is essential!
+If you do not already work within R projects - you should! It allows you to work on multiple projects at the same time, and makes specifying file paths much simpler. Finally, if you want to incorporate GiHub into your workflows in the future, the use of R Projects is essential!
 
 To create an R project for this course:
 
@@ -144,13 +144,13 @@ knitr::include_graphics("images/course-preparation/project_name.png")
 
 **Step 5**  Then click `Create Project`
 
-The best thing about R Projects, is that all the files contained within it can be specified relative to the project folder. No need for long file paths any more! Currently your file strucutre should be empty (aside from the `.rproj` file):
+The best thing about R Projects is that all the files contained within it can be specified relative to the project folder - no more long file paths to deal with! Currently the 'Files' tab in the bottom right should be empty (aside from the `.rproj` file):
 
 ```{r, echo=F, message=F, warning=F, out.width="75%"}
 knitr::include_graphics("images/course-preparation/file_window.png")
 ```
 
-Take note of the file path in the image above. For me it is `C:/Users/Dropbox/wildco_R_course` as this is where you will copy the data files to in later steps. 
+Take note of the file path in the image above. For me it is `C:/Users/Dropbox/wildco_R_course` as this is where you will copy the data files to in later steps. You can also go straight to the root directory the project by clicking the three dots to the right of the file path in the `Files` tab!
 
 Next, lets download the data files we need for this course!
 
@@ -175,8 +175,6 @@ knitr::include_graphics("images/course-preparation/copy.png")
 
 **Step 4**  Then paste the data folder into your newly created R project folder. 
 
-*Note! you can go straight to the root directory of you project by clicking the three dots to the right of the  file path in the `Files` tab of R Studio!*
-
 ```{r, echo=F, message=F, warning=F}
 knitr::include_graphics("images/course-preparation/paste_files.png")
 ```
@@ -191,13 +189,13 @@ And you are ready for the course!
 
 ## The example datasets 
 
-If you navigate through `data > raw_data` you will see that there are two files. One called `example_data` the other called `your_data`. The are summarised below:
+If you navigate through `data > raw_data` you will see that there are two files. One called `example_data` the other called `your_data`. They are summarised below:
 
 ### example_data
 
 We have provided a subset of data derived from the [WildCo Lab](https://wildlife.forestry.ubc.ca/)'s "Algar Restoration Project". In the interest of teaching and code processing times, we have not provided a full dataset. Rather the data represent a sub-sample of sites (38 of 73 available) and years (2 of 4 available).
 
-If you want more information on this project, see the following papers (and the archieved datasets they contain):
+If you want more information on this project, see the following papers (and the archived datasets they contain):
 
 [Tattersall, E. R., Burgar, J. M., Fisher, J. T., & Burton, A. C. (2020). Mammal seismic line use varies with restoration: Applying habitat restoration to species at risk conservation in a working landscape. Biological Conservation, 241, 108295.](https://www.sciencedirect.com/science/article/abs/pii/S0006320719307013)
 
@@ -213,11 +211,9 @@ If you want more information on this project, see the following papers (and the 
 
 ### your_data
 
-You can either use the dataset I have provided or you can substitute these files for your own data. 
+The `your_data` folder contains files I have provided. This is the subset of an unpublished (and as yet un-analysed) dataset. I will leave it to you to find out more about it during the course!
 
-If you used the files I have provided, this is the subset of an unpublished (and as yet un-analysed) dataset. I will leave it to you to find out more about it during the course!
-
-If you want to use your own data they *MUST* be in 'Wildlife Insights' format - see the descriptions [here](https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit?usp=sharing) and for a existing example/template see [here](https://drive.google.com/drive/folders/1MeCeoXepyee7mADlxQZ2k0bjVBOTP5m7?usp=sharing). *NOTE* delete the description row if you are using your own data.  
+You can replace this data set with your own if you wish. If you want to use your own data it *MUST* be in 'Wildlife Insights' format - see the descriptions [here](https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit?usp=sharing) and for a existing example/template see [here](https://drive.google.com/drive/folders/1MeCeoXepyee7mADlxQZ2k0bjVBOTP5m7?usp=sharing). *NOTE* delete the description row if you are using your own data.  
 
 The green/bolded columns shown in the template example are the **absolute minimal essential columns** - you can have more columns with other information! 
 
@@ -235,11 +231,11 @@ library("rgee")
 
 Then follow the steps in this tutorial: [Introduction to rgee](https://cran.r-project.org/web/packages/rgee/vignettes/rgee01.html)
 
-If you want to try this, good luck. It can be a little fiddly to get sorted!
+If you want to try this, good luck. It can be a little fiddly to get running!
 
 ## Practise before the course
 
-Finally, if you want to practise your R skills before the course, here are two (of many) great resources out there:
+Finally, if you want to practice your R skills before the course, here are two (of many) great resources out there:
 
 [R Programming for Beginners | Complete Tutorial | R & RStudio](https://www.youtube.com/watch?v=BvKETZ6kr9Q) - Some great introductory videos to working in R
 
