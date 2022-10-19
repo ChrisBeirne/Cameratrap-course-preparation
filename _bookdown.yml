@@ -2,11 +2,5 @@ book_filename: "Intro-to-data-analysis"
 language:
   ui:
     chapter_name: ""
-output: 
-  bookdown::gitbook:
-    config:
-      sharing:
-        facebook: false
-        twitter: false
 delete_merged_file: true
 output_dir: "docs"

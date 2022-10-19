@@ -24,7 +24,7 @@ In to prepare for the Columbia Mountain Institute's  "An Introduction to Camera 
 
 The steps to do this are outlined below:
 
-If you get stuck [send me an email](mailto:c.w.beirne@gmail.com)
+If you get stuck [send me an email!](mailto:c.w.beirne@gmail.com)
 
 ## Install R
 
