@@ -113,9 +113,9 @@ Close and re-open R Studio, then copy and paste following code block into your R
 # We use the remotes package to access package repositories not on the CRAN interface (e.g. on github)
 library(remotes)
 
-remotes::install_github("RS-eco/traitdata", build_vignettes = T, force=T)
+remotes::install_github("RS-eco/traitdata")
 remotes::install_github("arcaravaggi/remBoot")
-remotes::install_github("annam21/spaceNtime", build_vignettes=TRUE)
+remotes::install_github("annam21/spaceNtime")
 
 
 ```
