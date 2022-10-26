@@ -92,7 +92,9 @@ list.of.packages <- c("activity",
                       "installr",
                       "jtools",
                       "vegan",
-                      "MuMIn")
+                      "MuMIn",
+                      "usedist",
+                      "taxize")
 
 # A check to see which ones you have and which are missing
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
