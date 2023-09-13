@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Camera trap course preparation files</title>
   <meta name="description" content="Materials for the three day camera trap data management and analysis course" />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Camera trap course preparation files" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Christopher Beirne and the Wildlife Coexistence Lab, UBC" />
 
 
-<meta name="date" content="2022-10-26" />
+<meta name="date" content="2023-09-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -92,7 +92,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -105,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -151,9 +151,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="1.6.1" data-path="index.html"><a href="#example_data"><i class="fa fa-check"></i><b>1.6.1</b> example_data</a></li>
 <li class="chapter" data-level="1.6.2" data-path="index.html"><a href="#your_data"><i class="fa fa-check"></i><b>1.6.2</b> your_data</a></li>
+<li class="chapter" data-level="1.6.3" data-path="index.html"><a href="#example_covariates"><i class="fa fa-check"></i><b>1.6.3</b> example_covariates</a></li>
 </ul></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="#a-bonus-non-essential-package"><i class="fa fa-check"></i><b>1.7</b> A bonus, non essential, package</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="#practise-before-the-course"><i class="fa fa-check"></i><b>1.8</b> Practise before the course</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="#practise-before-the-course"><i class="fa fa-check"></i><b>1.7</b> Practise before the course</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -178,7 +178,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Camera trap course preparation files</h1>
 <p class="author"><em>Christopher Beirne and the Wildlife Coexistence Lab, UBC</em></p>
-<p class="date"><em>2022-10-26</em></p>
+<p class="date"><em>2023-09-13</em></p>
 </div>
 <div id="preparing-for-the-course" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">1</span> Preparing for the course<a href="#preparing-for-the-course" class="anchor-section" aria-label="Anchor link to header"></a></h1>
@@ -194,9 +194,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>If you get stuck <a href="mailto:c.w.beirne@gmail.com">send me an email!</a></p>
 <div id="install-r" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Install R<a href="#install-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Windows</strong> Click on <a href="https://cran.r-project.org/bin/windows/base/">this link</a> and then <code>Download R-4.2.1 for Windows</code>.</p>
-<p><strong>Mac</strong> Click on <a href="https://cran.r-project.org/bin/macosx/">this link</a> and then the <code>R-4.2.1.pkgs</code> link.</p>
-<p><strong>If you already have R</strong> please update your R client so that it is on at least version 4.2.1. Checkout the <a href="https://www.r-project.org/nosvn/pandoc/installr.html">installR package</a> to this directly from the terminal.</p>
+<p><strong>Windows</strong> Click on <a href="https://cran.r-project.org/bin/windows/base/">this link</a> and then <code>Download R-4.3.1 for Windows</code>.</p>
+<p><strong>Mac</strong> Click on <a href="https://cran.r-project.org/bin/macosx/">this link</a> and then the <code>R-4.3.1.pkgs</code> link.</p>
+<p><strong>If you already have R</strong> please update your R client so that it is on the latest version 4.3.1. Checkout the <a href="https://www.r-project.org/nosvn/pandoc/installr.html">installR package</a> to this directly from the terminal.</p>
 </div>
 <div id="install-rstudio" class="section level2 hasAnchor" number="1.2">
 <h2><span class="header-section-number">1.2</span> Install RStudio<a href="#install-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -208,104 +208,114 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="install-the-required-packages" class="section level2 hasAnchor" number="1.3">
 <h2><span class="header-section-number">1.3</span> Install the required packages<a href="#install-the-required-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The next step is to install the packages required for the course. We need to do this in two steps: first, install packages which are on CRAN (the Comprehensive R Archive Network), and then install those which are not.</p>
-<p>Finally, we have provided the links to install and setup R Google Earth Engine (<code>rgee</code>). This is an optional step for advanced users only - we will not be using it in the course!</p>
 <div id="cran-packages" class="section level3 hasAnchor" number="1.3.1">
 <h3><span class="header-section-number">1.3.1</span> CRAN packages<a href="#cran-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Copy and paste the following code into your R terminal and press enter. <em>Note - if you hover over the code block a copy button appears in the top right.</em></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># A list of the required packages</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>list.of.packages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;activity&quot;</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;corrplot&quot;</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;cowplot&quot;</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;dplyr&quot;</span>, </span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;elevatr&quot;</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;gfcanalysis&quot;</span>,  </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;ggplot2&quot;</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;gridExtra&quot;</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;iNEXT&quot;</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;kableExtra&quot;</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;Hmsc&quot;</span>,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;leaflet&quot;</span>,</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;lme4&quot;</span>,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;lubridate&quot;</span>,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;magrittr&quot;</span>,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;MCMCvis&quot;</span>,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;MODISTools&quot;</span>,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;osmdata&quot;</span>,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;pals&quot;</span>,</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;plotly&quot;</span>,</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;remotes&quot;</span>,</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;rmarkdown&quot;</span>,</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;sf&quot;</span>,</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;spOccupancy&quot;</span>,</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;stars&quot;</span>,</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;stringr&quot;</span>,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;terra&quot;</span>,</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;tibble&quot;</span>,</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;tidyr&quot;</span>, </span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;unmarked&quot;</span>,</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;viridis&quot;</span>,</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;installr&quot;</span>,</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;jtools&quot;</span>,</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;vegan&quot;</span>,</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;MuMIn&quot;</span>,</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;usedist&quot;</span>,</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>                      <span class="st">&quot;taxize&quot;</span>)</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co"># A check to see which ones you have and which are missing</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>new.packages <span class="ot">&lt;-</span> list.of.packages[<span class="sc">!</span>(list.of.packages <span class="sc">%in%</span> <span class="fu">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])]</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Code which tells R to install the missing packages</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">length</span>(new.packages)) <span class="fu">install.packages</span>(new.packages)</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">lapply</span>(list.of.packages, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># A list of the required packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>list.of.packages <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;activity&quot;</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>                      <span class="st">&quot;corrplot&quot;</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>                      <span class="st">&quot;cowplot&quot;</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>                      <span class="st">&quot;dplyr&quot;</span>, </span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>                      <span class="st">&quot;elevatr&quot;</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>                      <span class="st">&quot;gfcanalysis&quot;</span>,  </span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>                      <span class="st">&quot;ggplot2&quot;</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>                      <span class="st">&quot;gridExtra&quot;</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>                      <span class="st">&quot;iNEXT&quot;</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>                      <span class="st">&quot;kableExtra&quot;</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>                      <span class="st">&quot;Hmsc&quot;</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>                      <span class="st">&quot;leaflet&quot;</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>                      <span class="st">&quot;lme4&quot;</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>                      <span class="st">&quot;lubridate&quot;</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>                      <span class="st">&quot;magrittr&quot;</span>,</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a>                      <span class="st">&quot;MCMCvis&quot;</span>,</span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a>                      <span class="st">&quot;MODISTools&quot;</span>,</span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a>                      <span class="st">&quot;osmdata&quot;</span>,</span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a>                      <span class="st">&quot;pals&quot;</span>,</span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a>                      <span class="st">&quot;plotly&quot;</span>,</span>
+<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a>                      <span class="st">&quot;remotes&quot;</span>,</span>
+<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a>                      <span class="st">&quot;rmarkdown&quot;</span>,</span>
+<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a>                      <span class="st">&quot;sf&quot;</span>,</span>
+<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a>                      <span class="st">&quot;spOccupancy&quot;</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a>                      <span class="st">&quot;stars&quot;</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a>                      <span class="st">&quot;stringr&quot;</span>,</span>
+<span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a>                      <span class="st">&quot;terra&quot;</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a>                      <span class="st">&quot;tibble&quot;</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a>                      <span class="st">&quot;tidyr&quot;</span>, </span>
+<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a>                      <span class="st">&quot;unmarked&quot;</span>,</span>
+<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a>                      <span class="st">&quot;viridis&quot;</span>,</span>
+<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a>                      <span class="st">&quot;installr&quot;</span>,</span>
+<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a>                      <span class="st">&quot;jtools&quot;</span>,</span>
+<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a>                      <span class="st">&quot;vegan&quot;</span>,</span>
+<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a>                      <span class="st">&quot;MuMIn&quot;</span>,</span>
+<span id="cb1-37"><a href="#cb1-37" tabindex="-1"></a>                      <span class="st">&quot;usedist&quot;</span>,</span>
+<span id="cb1-38"><a href="#cb1-38" tabindex="-1"></a>                      <span class="st">&quot;taxize&quot;</span>)</span>
+<span id="cb1-39"><a href="#cb1-39" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" tabindex="-1"></a><span class="co"># A check to see which ones you have and which are missing</span></span>
+<span id="cb1-41"><a href="#cb1-41" tabindex="-1"></a>new.packages <span class="ot">&lt;-</span> list.of.packages[<span class="sc">!</span>(list.of.packages <span class="sc">%in%</span> <span class="fu">installed.packages</span>()[,<span class="st">&quot;Package&quot;</span>])]</span>
+<span id="cb1-42"><a href="#cb1-42" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" tabindex="-1"></a><span class="co"># Code which tells R to install the missing packages</span></span>
+<span id="cb1-44"><a href="#cb1-44" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">length</span>(new.packages)) <span class="fu">install.packages</span>(new.packages)</span>
+<span id="cb1-45"><a href="#cb1-45" tabindex="-1"></a><span class="fu">lapply</span>(list.of.packages, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
 <div id="other-packages" class="section level3 hasAnchor" number="1.3.2">
 <h3><span class="header-section-number">1.3.2</span> Other packages<a href="#other-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Some packages must be compiled from sources other than CRAN.</p>
 <p><strong>Windows users: you must install RTools on your computer using <a href="https://cran.r-project.org/bin/windows/Rtools/">this link</a>.</strong></p>
 <p>Close and re-open R Studio, then copy and paste following code block into your R console and press enter.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># We use the remotes package to access package repositories not on the CRAN interface (e.g. on github)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;RS-eco/traitdata&quot;</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;arcaravaggi/remBoot&quot;</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;annam21/spaceNtime&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># We use the remotes package to access package repositories not on the CRAN interface (e.g. on github)</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;RS-eco/traitdata&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;arcaravaggi/remBoot&quot;</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;annam21/spaceNtime&quot;</span>)</span></code></pre></div>
 </div>
 </div>
 <div id="create-an-r-project" class="section level2 hasAnchor" number="1.4">
 <h2><span class="header-section-number">1.4</span> Create an R project<a href="#create-an-r-project" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you do not already work within R projects - you should! It allows you to work on multiple projects at the same time, and makes specifying file paths much simpler. Finally, if you want to incorporate GiHub into your workflows in the future, the use of R Projects is essential!</p>
-<p>To create an R project for this course:</p>
-<p><strong>Step 1</strong> Click on <code>File</code> -&gt; <code>New project</code></p>
-<p><img src="images/course-preparation/new_project.png" width="50%" /></p>
-<p><strong>Step 2</strong> Click <code>New Directory</code></p>
-<p><img src="images/course-preparation/New_directory.png" width="75%" /></p>
-<p><strong>Step 3</strong> Then click <code>New Project</code></p>
-<p><img src="images/course-preparation/new_project_2.png" width="75%" /></p>
-<p><strong>Step 4</strong> Give your project a name and choose a folder to save it in (you do not have to copy the options here):</p>
-<p><img src="images/course-preparation/project_name.png" width="75%" /></p>
-<p><strong>Step 5</strong> Then click <code>Create Project</code></p>
+<p>To create an R project for this course:
+<br/><br/>
+<strong>Step 1</strong> Click on <code>File</code> -&gt; <code>New project</code></p>
+<p><img src="images/course-preparation/new_project.png" width="50%" />
+<br/><br/>
+<strong>Step 2</strong> Click <code>New Directory</code></p>
+<p><img src="images/course-preparation/New_directory.png" width="75%" />
+<br/><br/>
+<strong>Step 3</strong> Then click <code>New Project</code></p>
+<p><img src="images/course-preparation/new_project_2.png" width="75%" />
+<br/><br/>
+<strong>Step 4</strong> Give your project a name and choose a folder to save it in (you do not have to copy the options here):</p>
+<p><img src="images/course-preparation/project_name.png" width="75%" />
+<br/><br/>
+<strong>Step 5</strong> Then click <code>Create Project</code></p>
 <p>The best thing about R Projects is that all the files contained within it can be specified relative to the project folder - no more long file paths to deal with! Currently the ‘Files’ tab in the bottom right should be empty (aside from the <code>.rproj</code> file):</p>
-<p><img src="images/course-preparation/file_window.PNG" width="75%" /></p>
+<p><img src="images/course-preparation/file_window.png" width="75%" /></p>
 <p>Take note of the file path in the image above. For me it is <code>C:/Users/Dropbox/wildco_R_course</code> as this is where you will copy the data files to in later steps. You can also go straight to the root directory the project by clicking the three dots to the right of the file path in the <code>Files</code> tab!</p>
 <p>Next, lets download the data files we need for this course!</p>
 </div>
 <div id="download-the-data-files" class="section level2 hasAnchor" number="1.5">
 <h2><span class="header-section-number">1.5</span> Download the data files<a href="#download-the-data-files" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Step 1</strong> Click on the following dropbox link:</p>
-<p><a href="https://www.dropbox.com/sh/y014wzonjbz19p4/AAD9LsHi_SOrKsxmPQi2bLooa?dl=0">Data Management and Analysis Files</a></p>
-<p><strong>Step 2</strong> Click download:</p>
-<p><img src="images/course-preparation/click_download.png" width="594" /></p>
-<p><strong>Step 3</strong> Extract the files (it doesn’t matter where to), then open the <code>data_for_intro_to_camera_traps</code> folder and copy the <code>data</code> folder it contains.</p>
-<p><img src="images/course-preparation/copy.png" width="75%" /></p>
-<p><strong>Step 4</strong> Then paste the data folder into your newly created R project folder.</p>
-<p><img src="images/course-preparation/paste_files.PNG" width="462" /></p>
-<p><strong>Step 5</strong> If everything has worked, your `Files’ window in R Studio should now look like this:</p>
-<p><img src="images/course-preparation/final_files.PNG" width="80%" /></p>
-<p>And you are ready for the course!</p>
+<p><br/><br/>
+<strong>Step 1</strong> Click on the following dropbox link:</p>
+<p><a href="https://www.dropbox.com/sh/y014wzonjbz19p4/AAD9LsHi_SOrKsxmPQi2bLooa?dl=0">Data Management and Analysis Files</a>
+<br/><br/>
+<strong>Step 2</strong> Click download:
+<img src="images/course-preparation/click_download.png" width="594" />
+<br/><br/>
+<strong>Step 3</strong> Extract the files (it doesn’t matter where to), then open the <code>data_for_intro_to_camera_traps</code> folder and copy the <code>data</code> folder it contains.
+<img src="images/course-preparation/copy.png" width="75%" />
+<br/><br/>
+<strong>Step 4</strong> Then paste the data folder into your newly created R project folder.
+<img src="images/course-preparation/paste_files.png" width="462" />
+<br/><br/>
+<strong>Step 5</strong> If everything has worked, your `Files’ window in R Studio should now look like this:
+<img src="images/course-preparation/final_files.png" width="80%" />
+<br/><br/>
+And you are ready for the course!</p>
 </div>
 <div id="the-example-datasets" class="section level2 hasAnchor" number="1.6">
 <h2><span class="header-section-number">1.6</span> The example datasets<a href="#the-example-datasets" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>If you navigate through <code>data &gt; raw_data</code> you will see that there are two files. One called <code>example_data</code> the other called <code>your_data</code>. They are summarised below:</p>
+<p>If you navigate through <code>data &gt; raw_data</code> you will see that there are three files. One called <code>example_data</code>, one called <code>your_data</code> and one called <code>example_covariates</code>. They are summarized below:</p>
 <div id="example_data" class="section level3 hasAnchor" number="1.6.1">
 <h3><span class="header-section-number">1.6.1</span> example_data<a href="#example_data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We have provided a subset of data derived from the <a href="https://wildlife.forestry.ubc.ca/">WildCo Lab</a>’s “Algar Restoration Project”. In the interest of teaching and code processing times, we have not provided a full dataset. Rather the data represent a sub-sample of sites (38 of 73 available) and years (2 of 4 available).</p>
@@ -323,18 +333,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>You can replace this data set with your own if you wish. If you want to use your own data it <em>MUST</em> be in ‘Wildlife Insights’ format - see the descriptions <a href="https://docs.google.com/spreadsheets/d/1Jg-WybmVeGlWGrbPpwuwJCgranOV1r3M_LrzELttfK0/edit?usp=sharing">here</a> and for a existing example/template see <a href="https://drive.google.com/drive/folders/1MeCeoXepyee7mADlxQZ2k0bjVBOTP5m7?usp=sharing">here</a>. <em>NOTE</em> delete the description row if you are using your own data.</p>
 <p>The green/bolded columns shown in the template example are the <strong>absolute minimal essential columns</strong> - you can have more columns with other information!</p>
 </div>
+<div id="example_covariates" class="section level3 hasAnchor" number="1.6.3">
+<h3><span class="header-section-number">1.6.3</span> example_covariates<a href="#example_covariates" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>These are some files which we will use as predictors for our camera trap models. I will explain all in due course!</p>
 </div>
-<div id="a-bonus-non-essential-package" class="section level2 hasAnchor" number="1.7">
-<h2><span class="header-section-number">1.7</span> A bonus, non essential, package<a href="#a-bonus-non-essential-package" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>All of the packages above work with R alone. However, the R Google Earth Engine package <code>rgee</code> needs to interface with Python. For this reason, we will not be using this package during this course.</p>
-<p>We have, however, provided some example code if you want to try it in your own time. The first step is to install the <code>rgee</code> package.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;rgee&quot;</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;rgee&quot;</span>)</span></code></pre></div>
-<p>Then follow the steps in this tutorial: <a href="https://cran.r-project.org/web/packages/rgee/vignettes/rgee01.html">Introduction to rgee</a></p>
-<p>If you want to try this, good luck. It can be a little fiddly to get running!</p>
 </div>
-<div id="practise-before-the-course" class="section level2 hasAnchor" number="1.8">
-<h2><span class="header-section-number">1.8</span> Practise before the course<a href="#practise-before-the-course" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="practise-before-the-course" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Practise before the course<a href="#practise-before-the-course" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Finally, if you want to practice your R skills before the course, here are two (of many) great resources out there:</p>
 <p><a href="https://www.youtube.com/watch?v=BvKETZ6kr9Q">R Programming for Beginners | Complete Tutorial | R &amp; RStudio</a> - Some great introductory videos to working in R</p>
 <p><a href="https://b-rodrigues.github.io/modern_R/">Modern R with the tidyverse</a> - A book introducing tidyverse data manipulation</p>
