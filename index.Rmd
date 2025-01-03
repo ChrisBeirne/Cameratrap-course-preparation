@@ -101,6 +101,12 @@ if(length(new.packages)) install.packages(new.packages)
 lapply(list.of.packages, require, character.only = TRUE)
 ```
 
+### An Earthdata Server account
+
+**IMPORTANT** to access MODIS data (and other great products) rapidly through the `modisfast` package you need to create your own login for the associated Earthdata servers.
+
+**To create your free account go to : <https://urs.earthdata.nasa.gov/>.** and make a note of your credentials for use during the Analysis Covariates chapter. 
+
 ### Other packages
 Some packages must be compiled from sources other than CRAN.
 

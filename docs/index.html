@@ -147,7 +147,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.3" data-path="index.html"><a href="#install-the-required-packages"><i class="fa fa-check"></i><b>1.3</b> Install the required packages</a>
 <ul>
 <li class="chapter" data-level="1.3.1" data-path="index.html"><a href="#cran-packages"><i class="fa fa-check"></i><b>1.3.1</b> CRAN packages</a></li>
-<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="#other-packages"><i class="fa fa-check"></i><b>1.3.2</b> Other packages</a></li>
+<li class="chapter" data-level="1.3.2" data-path="index.html"><a href="#an-earthdata-server-account"><i class="fa fa-check"></i><b>1.3.2</b> An Earthdata Server account</a></li>
+<li class="chapter" data-level="1.3.3" data-path="index.html"><a href="#other-packages"><i class="fa fa-check"></i><b>1.3.3</b> Other packages</a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="index.html"><a href="#create-an-r-project"><i class="fa fa-check"></i><b>1.4</b> Create an R project</a></li>
 <li class="chapter" data-level="1.5" data-path="index.html"><a href="#download-the-data-files"><i class="fa fa-check"></i><b>1.5</b> Download the data files</a></li>
@@ -260,8 +261,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-43"><a href="#cb1-43" tabindex="-1"></a><span class="cf">if</span>(<span class="fu">length</span>(new.packages)) <span class="fu">install.packages</span>(new.packages)</span>
 <span id="cb1-44"><a href="#cb1-44" tabindex="-1"></a><span class="fu">lapply</span>(list.of.packages, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
-<div id="other-packages" class="section level3 hasAnchor" number="1.3.2">
-<h3><span class="header-section-number">1.3.2</span> Other packages<a href="#other-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="an-earthdata-server-account" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> An Earthdata Server account<a href="#an-earthdata-server-account" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>IMPORTANT</strong> to access MODIS data (and other great products) rapidly through the <code>modisfast</code> package you need to create your own login for the associated Earthdata servers.</p>
+<p><strong>To create your free account go to : <a href="https://urs.earthdata.nasa.gov/" class="uri">https://urs.earthdata.nasa.gov/</a>.</strong> and make a note of your credentials for use during the Analysis Covariates chapter.</p>
+</div>
+<div id="other-packages" class="section level3 hasAnchor" number="1.3.3">
+<h3><span class="header-section-number">1.3.3</span> Other packages<a href="#other-packages" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Some packages must be compiled from sources other than CRAN.</p>
 <p><strong>Windows users: you must install RTools on your computer using <a href="https://cran.r-project.org/bin/windows/Rtools/">this link</a>.</strong></p>
 <p>Close and re-open R Studio, then copy and paste following code block into your R console and press enter.</p>
